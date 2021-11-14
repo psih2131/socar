@@ -1,0 +1,62 @@
+.diagram-conteiner{
+	margin-top: 120px;
+}
+.diagram-conteiner__value{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	.sec-about-main__info-point{
+		padding-left: 0;
+	}
+}
+.diagram-conteiner__claster{
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: center;
+}
+
+.ct-series-a .ct-slice-pie {
+  /* fill of the pie slieces */
+  fill: #DF283E;
+  stroke: white;
+}
+.ct-series-b .ct-slice-pie {
+  /* fill of the pie slieces */
+  fill: #404545;
+  stroke: white;
+}
+.ct-series-c .ct-slice-pie {
+  /* fill of the pie slieces */
+  fill: #A0A1A5;
+  stroke: white;
+}
+.ct-chart-wrapper{
+	padding: 25px;
+	border-radius: 1000px;
+	background: #FEFEFE;
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.4);
+}
+.ct-label{
+	color: #fff;
+	fill: #fff;
+	font-size: 18px;
+	font-weight: 300;
+}
+@media only screen and (max-width: 800px){
+	.diagram-conteiner{
+		margin-top: 40px;
+	}
+	.diagram-conteiner__claster{
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+}
+@media only screen and (max-width: 550px){
+.ct-chart-wrapper{
+	padding: 10px;
+}
+}
+

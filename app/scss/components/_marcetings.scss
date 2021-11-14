@@ -1,0 +1,215 @@
+.sec-about-main__text-box{
+	h3{
+		text-align: center;
+		font-weight: normal;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+}
+.marketings-image{
+	width: 100%;
+	padding-top: 90px;
+
+	img{
+		width: 100%;
+		display: block;
+	}
+}
+.marketings__more-info-conteiner{
+	margin-top: 55px;
+}
+.marketings__box{
+	margin-bottom: 35px;
+}
+.marketings__box-header{
+	display: flex;
+	align-items: center;
+}
+.marketings__box-point{
+	width: 27px;
+	height: 27px;
+	border-radius: 100px;
+}
+.box-point_red{
+	background: #DF283E;
+}
+.box-point_blue{
+	background: #6BBFFF;
+}
+.marketings__box-title{
+	font-size: 25px;
+	font-weight: normal;
+	margin-left: 14px;
+}
+.marketings__box-lern-more{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+
+	p{
+		font-size: 20px;
+		color: #999;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
+.marketings__more-ic{
+	width: 18px;
+	transition: all ease 0.3s;
+
+	img{
+		width: 100%;
+		display: block;
+	}
+}
+.marketings__box-body{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: none;
+}
+.box-body-marketings__wrapper{
+	display: flex;
+	align-items: flex-start;
+}
+.box-body-marketings__text-conteiner{
+	width: 690px;
+	margin-left: 75px;
+}
+.box-body-marketings__image{
+	padding: 0;
+
+	.slider-radius__wrapper{
+		width: 425px;
+		height: 425px;
+		padding: 35px;
+
+		&:before{
+			width: 400px;
+		    height: 400px;
+		    background: url("../img/_src/borfderx.png")no-repeat;
+		    background-size: cover;
+		    background-position: center;
+		    content: "";
+		    position: absolute;
+		    top: auto;
+		    transition: all 0.3s ease ;
+		}
+	}
+}
+.box-body-marketings__title{
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 40px;
+	font-weight: normal;
+}
+.box-body-marketings__subtitle{
+	text-align: center;
+	font-size: 30px;
+	color: #DF283E;
+	margin-bottom: 60px;
+}
+.box-body-marketings__text-reader{
+	width: 100%;
+
+	p{
+		margin-bottom: 20px;
+		font-size: 30px;
+		text-align: justify;
+	}
+}
+.activ-tab{
+	transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 1280px){
+.box-body-marketings__text-conteiner{
+	width: calc(100% - 425px);
+	margin-left: 0;
+	padding-left: 40px;
+}
+}
+
+@media only screen and (max-width: 900px){
+.box-body-marketings__wrapper{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.box-body-marketings__text-conteiner{
+	width: 100%;
+	padding-left: 0;
+	margin-top: 40px;
+}
+}
+@media only screen and (max-width: 800px){
+.marketings-image{
+	padding-top: 40px;
+}
+.marketings__box-body{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.box-body-marketings__title{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.box-body-marketings__subtitle{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.box-body-marketings__text-reader p{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.box-body-marketings__image {
+	.slider-radius__wrapper{
+		width: 280px;
+	    height: 280px;
+	    padding: 20px;
+
+	    &:before {
+		    width: 260px;
+		    height: 260px;
+		    background: url(../img/_src/borfderx.png) no-repeat;
+		    background-size: cover;
+		    background-position: center;
+		    content: "";
+		    position: absolute;
+		    top: auto;
+		    -webkit-transition: all .3s ease;
+		    -o-transition: all .3s ease;
+		    transition: all .3s ease;
+		}
+	}
+}
+.sec-about-main__text-box h3{
+	font-size: 26px;
+}
+}
+@media only screen and (max-width: 600px){
+.marketings__box-header{
+	flex-wrap: wrap;
+}
+.marketings__box-lern-more{
+	width: 100%;
+	margin-left: 0;
+	padding-left: 32px;
+	align-items: center;
+	p{
+		font-size: 16px;
+	}
+}
+.marketings__box-title{
+	font-size: 20px;
+}
+.marketings__more-info-conteiner{
+	margin-top: 40px;
+}
+.sec-about-main__text-box p{
+	margin-bottom: 20px;
+}
+.marketings-image{
+	padding-top: 20px;
+}
+}

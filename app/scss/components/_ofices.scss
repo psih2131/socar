@@ -1,0 +1,176 @@
+.sec-about-main__map-conteiner{
+	margin-top: 90px;
+	position: relative;
+}
+.map-conteiner__image{
+	width: 100%;
+	position: relative;
+
+	img{
+		width: 100%;
+		display: block;
+		position: relative;
+		z-index: 1;
+	}
+}
+.map-conteiner__info{
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	padding-top: 160px;
+}
+.map-conteiner__info-line{
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	p{
+		font-size: 20px;
+		color: #404545;
+	}
+}
+.map-conteiner__info-color{
+	width: 27px;
+	height: 27px;
+	border-radius: 100px;
+	margin-right: 10px;
+}
+.map-conteiner__info-color_color-red{
+	background: #DF283E;
+}
+.map-conteiner__info-color_color-grey{
+	background: #999999;
+}
+.map-conteiner__map-point{
+	position: absolute;
+	z-index: 2;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	
+
+	&:hover{
+		background: rgba(0, 0, 0, 0);
+		z-index: 10;
+		
+		.map-conteiner__point-wrapper{
+			opacity: 1;
+			z-index: 10;
+			display: flex;
+			
+			width: 100px;
+	        height:115px;
+		}
+	}
+}
+.point-red{
+	background: #DF283E;
+
+
+	svg{
+		path{
+			fill: #DF283E;
+		}
+	}
+}
+
+.point-grey{
+
+	background: #999999;
+
+	svg{
+		path{
+			fill: #999999;
+		}
+	}
+}
+.map-conteiner__point-wrapper{
+	position: absolute;
+	width: 100px;
+	height: 115px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: -105px;
+	opacity: 0;
+	z-index: -100;
+	display: none;
+	width: 0;
+	height: 0;
+
+	svg{
+		position: relative;
+		width: 100%;
+		z-index: 4;
+
+	}
+	p{
+		position: absolute;
+		font-size: 16px;
+		z-index: 10;
+		color: #fff;
+		text-align: center;
+	}
+}
+
+.mp_el1{
+	left: 20%;
+	top: 46%;
+}
+.mp_el2{
+	left: 44%;
+	top: 34%;
+}
+.mp_el3{
+	left: 48%;
+	top: 38%;
+}
+.mp_el4{
+	left: 62%;
+	top: 52%;
+}
+.mp_el5{
+	left: 80%;
+	top: 69%;
+}
+.mp_el6{
+	left: 46%;
+	top: 42%;
+}
+.mp_el7{
+	left: 53%;
+	top: 32%;
+}
+.mp_el8{
+	left: 54%;
+	top: 42%;
+}
+.mp_el9{
+	left: 55%;
+	top: 48%;
+}
+.mp_el10{
+	left: 46%;
+	top: 61%;
+}
+
+@media only screen and (max-width: 800px){
+	.map-conteiner__info{
+		padding-top: 60px;
+	}
+	.map-conteiner__info-line p{
+		font-size: 16px;
+		width: calc(100% - 37px);
+	}
+	.map-conteiner__info-wrapper{
+		width: 100%;
+	}
+	.sec-about-main__map-conteiner{
+		margin-top: 40px;
+	}
+	.map-conteiner__map-point{
+		width: 10px;
+		height: 10px;
+	}
+}

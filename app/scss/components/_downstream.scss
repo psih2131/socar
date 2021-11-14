@@ -1,0 +1,37 @@
+.downstream-image{
+	margin-top: 130px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+	&:before{
+		width: 1920px;
+		height: 1203px;
+
+		background: url('../img/_src/downsteam-line.png')no-repeat;
+		background-size: cover;
+		background-position: center;
+		z-index: 1;
+		top: -300px;
+		content: "";
+		position: absolute;
+	}
+
+	img{
+		position: relative;
+		width: 100%;
+		display: block;
+		z-index: 10;
+	}
+}
+
+@media only screen and (max-width: 800px){
+.downstream-image{
+	margin-top: 45px;
+	&:before{
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+}
+}
